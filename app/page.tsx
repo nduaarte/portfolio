@@ -133,7 +133,7 @@ export default function Portfolio() {
       </section>
       <Separator className="bg-zinc-800" />
       {/* Projects */}
-      <section id="projetos" className="max-w-6xl mx-auto py-24 px-4">
+      <section id="projects" className="max-w-6xl mx-auto py-24 px-4">
         <h3 className="text-3xl text-white font-bold mb-14 text-center">
           {t.projectsTitle}
         </h3>
