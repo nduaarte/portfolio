@@ -289,7 +289,7 @@ export default function Portfolio() {
                   <div className="absolute left-[2px] top-5 w-3 h-3 rounded-full bg-zinc-600 group-hover:bg-white transition-colors duration-300 animate-pulse shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
 
                   {/* Card */}
-                  <div className="ml-8 border border-zinc-800 bg-zinc-950/60 rounded-2xl p-6 hover:border-zinc-600 hover:bg-zinc-900/60 transition-all duration-500 shadow-[0_0_25px_-10px_rgba(255,255,255,0.1)]">
+                  <div className="ml-8 border border-neutral-700 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black rounded-2xl p-6 hover:border-neutral-500 hover:bg-neutral-900/80 transition-all duration-500 shadow-[0_0_20px_-10px_rgba(255,255,255,0.08)]">
                     {/* Cabeçalho */}
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                       <h4 className="text-xl font-semibold text-white flex items-center gap-2">
