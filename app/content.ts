@@ -17,7 +17,7 @@ export const content = {
     projects: [
       {
         name: "Dinzo",
-        desc: "Aplicativo de finanças pessoais com mais de 10 mil downloads. Desenvolvido com React Native, focado em performance e UX.",
+        desc: "Dinzo é um aplicativo de gestão financeira pessoal que integra contas, cartões e despesas em uma plataforma moderna e intuitiva. Com foco em simplicidade e automação, o app permite monitorar transações, definir metas e visualizar relatórios inteligentes, ajudando usuários a manterem o controle total de suas finanças.",
         tech: "React Native · Open Finance · Play Billing · In-App Purchases",
         links: [
           { label: "Site", href: "https://dinzo.com.br" },
@@ -58,6 +58,63 @@ export const content = {
           {
             label: "Apple Store",
             href: "https://apps.apple.com/br/app/minha-cargill-bioenergia/id1610735161",
+          },
+        ],
+      },
+      {
+        name: "Shareitt",
+        desc: "Plataforma global de compartilhamento e troca de bens e habilidades em comunidades, com sistema de pontos, notificações e engajamento de usuários.",
+        tech: "React Native · White Label · Internacional",
+        links: [
+          {
+            label: "Site",
+            href: "https://www.shareitt.com/?lang=pt",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/search?q=shareit&c=apps&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/br/app/shareitt-2nd-hand-marketplace/id1449704865",
+          },
+        ],
+      },
+      {
+        name: "Ziptime",
+        desc: "Plataforma CRM simples e inteligente para equipes de vendas e autônomos. Com o Ziptime você organiza todo o funil de vendas, cadastra e acompanha prospectos, recebe notificações de follow-up e consegue monitorar resultados em tempo real para focar onde realmente importa.",
+        tech: "React Native · CRM · Finanças",
+        links: [
+          {
+            label: "Site",
+            href: "https://ziptime.com.br",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.ziptime.app&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/us/app/ziptime-crm/id1313518839?l=pt-BR",
+          },
+        ],
+      },
+      {
+        name: "Caule App",
+        desc: "Plataforma para colaboradores que simplifica a comunicação entre RH e equipes, permitindo acesso direto a contracheques, extrato de férias, banco de horas e comunicados em tempo real. Iniciativa adotada por mais de 30 mil colaboradores.",
+        tech: "React Native · White Label · Modo Offline",
+        links: [
+          {
+            label: "Site",
+            href: "https://caule.app/",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.caule.app&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/br/app/caule/id6444843213",
           },
         ],
       },
@@ -124,7 +181,7 @@ export const content = {
     projects: [
       {
         name: "Dinzo",
-        desc: "Personal finance app with over 10k downloads. Built with React Native, focused on performance and UX.",
+        desc: "Dinzo is a personal finance management app that consolidates accounts, cards, and expenses into a modern and intuitive platform. Focused on simplicity and automation, it enables users to track transactions, set goals, and visualize smart insights to maintain full control over their finances.",
         tech: "React Native · Open Finance · Play Billing · In-App Purchases",
         links: [
           { label: "Website", href: "https://dinzo.com.br" },
@@ -168,6 +225,63 @@ export const content = {
           },
         ],
       },
+      {
+        name: "Shareitt",
+        desc: "Global platform for sharing and exchanging goods and skills within communities, featuring a point-based system, notifications, and user engagement tools.",
+        tech: "React Native · White Label · International",
+        links: [
+          {
+            label: "Website",
+            href: "https://www.shareitt.com",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/search?q=shareit&c=apps&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/br/app/shareitt-2nd-hand-marketplace/id1449704865",
+          },
+        ],
+      },
+      {
+        name: "Ziptime",
+        desc: "Intuitive CRM platform designed for sales teams and freelancers. Ziptime allows you to streamline your sales pipeline, register and track prospects, get timely follow-up notifications, and monitor performance in real time so you can focus on what matters most.",
+        tech: "React Native · CRM · Finances",
+        links: [
+          {
+            label: "Website",
+            href: "https://ziptime.com.br",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.ziptime.app&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/us/app/ziptime-crm/id1313518839?l=pt-BR",
+          },
+        ],
+      },
+      {
+        name: "Caule App",
+        desc: "An employee-centric mobile platform streamlining HR and staff communication by offering instant access to payslips, vacation statements, time bank, and real-time notifications. Trusted by over 30k users.",
+        tech: "React Native · White Label · Offline Mode",
+        links: [
+          {
+            label: "Website",
+            href: "https://caule.app/",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.caule.app&hl=pt_BR",
+          },
+          {
+            label: "Apple Store",
+            href: "https://apps.apple.com/br/app/caule/id6444843213",
+          },
+        ],
+      },
     ],
     experienceTitle: "Experience",
     experience: [
@@ -175,7 +289,7 @@ export const content = {
         company: "Codex Remote",
         link: "https://codex.com.br/",
         location: "Porto Alegre, Brasil",
-        period: "2 years 11 months- The moment",
+        period: "2 years 11 months - The moment",
         description:
           "I developed an application that combines accident reports and real-time location data. This application aims to provide crucial information for a rapid and effective tracking response, contributing to improved management of emergency situations.",
       },
