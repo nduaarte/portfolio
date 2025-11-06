@@ -144,7 +144,7 @@ export default function Portfolio() {
               key={i}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className={`group relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950/70 backdrop-blur-xl shadow-[0_0_25px_-10px_rgba(255,255,255,0.1)] hover:border-zinc-600 hover:shadow-[0_0_35px_-10px_rgba(255,255,255,0.2)] transition-all duration-500 ${
+              className={`group relative overflow-hidden rounded-3xl border border-neutral-700 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black backdrop-blur-xl shadow-[0_0_20px_-10px_rgba(255,255,255,0.08)] hover:border-neutral-500 hover:shadow-[0_0_25px_-8px_rgba(255,255,255,0.15)] transition-all duration-500 ${
                 i === 0 ? "lg:col-span-2" : ""
               }`}
             >
