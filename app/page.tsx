@@ -11,7 +11,6 @@ export default function Portfolio() {
 
   return (
     <div className="bg-neutral-950 text-zinc-100 min-h-screen font-sans">
-      <div className="z-999 fixed inset-0 -z-10 bg-[radial-gradient(circle_at_30%_40%,rgba(255,255,255,0.04),transparent_60%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.03),transparent_70%)] animate-[softPulse_10s_ease-in-out_infinite_alternate]" />
       {/* Header */}
       <header className="fixed top-0 left-0 w-full backdrop-blur-md border-b border-zinc-800 z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center p-4">

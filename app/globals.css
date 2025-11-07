@@ -125,13 +125,3 @@ html {
   scroll-behavior: smooth;
   background-color: #09090b;
 }
-
-@keyframes softPulse {
-  0%,
-  100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
