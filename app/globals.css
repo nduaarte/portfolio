@@ -123,4 +123,17 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #09090b;
+}
+
+@keyframes fogMove {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.05);
+    opacity: 1;
+  }
 }
