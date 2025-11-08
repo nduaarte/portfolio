@@ -23,7 +23,7 @@ export const content = {
           { label: "Site", href: "https://dinzo.com.br" },
           {
             label: "Google Play",
-            href: "https://play.google.com/store/apps/details?id=com.dizerodireito.dodquestoes",
+            href: "https://play.google.com/store/apps/details?id=com.financeiro.app&hl=pt_BR",
           },
           {
             label: "Apple Store",
