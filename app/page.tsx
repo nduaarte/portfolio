@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 import { content } from "./content";
-import { Analytics } from "@vercel/analytics/next";
 
 export default function Portfolio() {
   const [lang, setLang] = useState<"pt" | "en">("en");
@@ -12,7 +11,6 @@ export default function Portfolio() {
 
   return (
     <div className="bg-neutral-950 text-zinc-100 min-h-screen font-sans">
-      <Analytics />
       {/* Header */}
       <header className="fixed top-0 left-0 w-full backdrop-blur-md border-b border-zinc-800 z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center p-4">
