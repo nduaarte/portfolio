@@ -72,7 +72,7 @@ export const content = {
           },
           {
             label: "Google Play",
-            href: "https://play.google.com/store/search?q=shareit&c=apps&hl=pt_BR",
+            href: "https://play.google.com/store/apps/details?id=com.haimtov.shareitt&pcampaignid=web_share",
           },
           {
             label: "Apple Store",
@@ -236,7 +236,7 @@ export const content = {
           },
           {
             label: "Google Play",
-            href: "https://play.google.com/store/search?q=shareit&c=apps&hl=pt_BR",
+            href: "https://play.google.com/store/apps/details?id=com.haimtov.shareitt&pcampaignid=web_share",
           },
           {
             label: "Apple Store",
