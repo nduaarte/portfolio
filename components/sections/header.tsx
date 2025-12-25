@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { content } from "../../app/content";
+import { content } from "@/app/content";
 
 interface IHeaderProps {
   lang: "pt" | "en";

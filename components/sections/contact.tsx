@@ -1,5 +1,5 @@
 import React from "react";
-import { content } from "../../app/content";
+import { content } from "@/app/content";
 
 interface IContactProps {
   lang: "pt" | "en";

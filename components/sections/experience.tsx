@@ -1,5 +1,5 @@
 import React from "react";
-import { content } from "../../app/content";
+import { content } from "@/app/content";
 import { motion } from "framer-motion";
 
 interface IExperienceProps {

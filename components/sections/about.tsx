@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { content } from "../../app/content";
+import { content } from "@/app/content";
 
 interface IAboutProps {
   lang: "pt" | "en";
