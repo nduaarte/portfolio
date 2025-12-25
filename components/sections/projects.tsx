@@ -1,6 +1,10 @@
 import React from "react";
-import { content } from "../../app/content";
 import { motion } from "framer-motion";
+import { content } from "@/app/content";
+import GooglePlayIcon from "@/assets/google-play-logo.svg";
+import AppleIcon from "@/assets/apple-logo.svg";
+import WebsiteIcon from "@/assets/website-logo.svg";
+import MailIcon from "@/assets/mail.svg";
 
 interface IProjectsProps {
   lang: "pt" | "en";
@@ -52,6 +56,42 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
                 <h4 className="text-2xl font-semibold text-white">{p.name}</h4>
               </div>
 
+              {/* Tecnologias */}
+              <div
+                className={`flex flex-wrap gap-2 ${
+                  i === 0 ? "justify-center" : ""
+                }`}
+              >
+                {p.tech.split("·").map((rawTech, j) => {
+                  const tech = rawTech.trim();
+                  const prefix = tech[0];
+                  const isPremium = ["#"].includes(prefix);
+
+                  const label = isPremium ? tech.slice(1).trim() : tech;
+
+                  return (
+                    <span
+                      key={j}
+                      className={`px-3 py-1 text-xs rounded-md backdrop-blur-sm ${
+                        isPremium
+                          ? "text-white border border-transparent"
+                          : "bg-white/2 text-zinc-300 border border-white/10"
+                      }`}
+                      style={
+                        isPremium
+                          ? {
+                              background:
+                                "linear-gradient(#09090b, #09090b) padding-box, linear-gradient(90deg, rgb(56,189,248), rgb(186,230,253), rgb(212,212,216)) border-box",
+                            }
+                          : undefined
+                      }
+                    >
+                      {label}
+                    </span>
+                  );
+                })}
+              </div>
+
               {/* Descrição */}
               <p
                 className={`text-zinc-400 leading-relaxed ${
@@ -60,22 +100,6 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
               >
                 {p.desc}
               </p>
-
-              {/* Tecnologias */}
-              <div
-                className={`flex flex-wrap gap-2 ${
-                  i === 0 ? "justify-center" : ""
-                }`}
-              >
-                {p.tech.split("·").map((tech, j) => (
-                  <span
-                    key={j}
-                    className="px-3 py-1 text-xs rounded-md bg-white/5 text-zinc-300 border border-white/10 backdrop-blur-sm"
-                  >
-                    {tech.trim()}
-                  </span>
-                ))}
-              </div>
 
               {/* Links */}
               <div
@@ -89,31 +113,13 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
                     href={l.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-zinc-300 hover:text-white underline underline-offset-4 decoration-zinc-600 hover:decoration-white transition-all"
+                    className="flex items-center gap-1  text-sm text-zinc-300 hover:text-white decoration-zinc-600 hover:decoration-white transition-all"
                   >
-                    {l.label.includes("Apple") && (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="w-4 h-4"
-                      >
-                        <path d="M16.365 1.43c0 1.14-.417 2.273-1.163 3.178-.69.845-1.833 1.497-2.904 1.42-.114-1.06.455-2.24 1.163-3.03.758-.87 2.004-1.507 2.904-1.568zm4.79 17.32c-.553 1.27-1.218 2.543-2.145 3.86-.86 1.227-1.94 2.744-3.37 2.767-1.266.022-1.676-.801-3.472-.801-1.798 0-2.248.778-3.513.823-1.414.045-2.494-1.353-3.354-2.58C3.462 20.17 2.1 15.07 4.567 11.53c.951-1.362 2.64-2.222 4.191-2.245 1.312-.023 2.548.891 3.47.891.871 0 2.4-1.097 4.04-.937.687.029 2.62.28 3.858 2.126-.098.062-2.308 1.338-2.285 3.996.023 3.174 2.724 4.23 2.777 4.247z" />
-                      </svg>
-                    )}
-                    {l.label.includes("Google") && (
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        className="w-4 h-4"
-                      >
-                        <path d="M1.5 3.5l12.91 8.5L1.5 20.5v-17zm13.29 8.5l6.63 4.36c.23-.64.35-1.32.35-2.02 0-.72-.13-1.42-.38-2.07l-6.6-.27z" />
-                      </svg>
-                    )}
-                    {l.label.includes("Site") || l.label.includes("Website")
-                      ? "🌐"
-                      : null}
+                    {l.label.includes("Apple") && <AppleIcon />}
+                    {l.label.includes("Google") && <GooglePlayIcon />}
+                    {l.label.includes("Site") || l.label.includes("Website") ? (
+                      <WebsiteIcon />
+                    ) : null}
                     {l.label}
                   </a>
                 ))}

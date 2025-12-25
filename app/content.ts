@@ -18,7 +18,7 @@ export const content = {
       {
         name: "Dinzo",
         desc: "Dinzo é um aplicativo de gestão financeira pessoal que integra contas, cartões e despesas em uma plataforma moderna e intuitiva. Com foco em simplicidade e automação, o app permite monitorar transações, definir metas e visualizar relatórios inteligentes, ajudando usuários a manterem o controle total de suas finanças.",
-        tech: "React Native · Open Finance · Play Billing · In-App Purchases",
+        tech: "React Native · Open Finance · Play Billing · In-App Purchases · # Google Play 10mil+ downloads · # Google Play ★ 4,5 · # Apple Store ★ 4,3",
         links: [
           { label: "Site", href: "https://dinzo.com.br" },
           {
@@ -45,7 +45,7 @@ export const content = {
       {
         name: "Cargill Bioenergia",
         desc: "Aplicativo corporativo para colaboradores da Cargill Bioenergia LTDA com acesso rápido a contracheques, férias programadas, histórico de ponto, banco de horas, comunicados internos e conteúdos institucionais — tudo em uma interface móvel moderna e sem burocracia.",
-        tech: "React Native · Notificações Internas · Modo Offline",
+        tech: "React Native · Modo Offline · # Google Play 10mil+ downloads",
         links: [
           {
             label: "Site",
@@ -64,7 +64,7 @@ export const content = {
       {
         name: "Shareitt",
         desc: "Plataforma global de compartilhamento e troca de bens e habilidades em comunidades, com sistema de pontos, notificações e engajamento de usuários.",
-        tech: "React Native · White Label · Internacional",
+        tech: "React Native · White Label · Internacional · Loja · # Google Play 100mil+ downloads · # Apple Store ★ 4,6",
         links: [
           {
             label: "Site",
@@ -83,7 +83,7 @@ export const content = {
       {
         name: "Ziptime",
         desc: "Plataforma CRM simples e inteligente para equipes de vendas e autônomos. Com o Ziptime você organiza todo o funil de vendas, cadastra e acompanha prospectos, recebe notificações de follow-up e consegue monitorar resultados em tempo real para focar onde realmente importa.",
-        tech: "React Native · CRM · Finanças",
+        tech: "React Native · CRM · Finances",
         links: [
           {
             label: "Site",
@@ -182,7 +182,7 @@ export const content = {
       {
         name: "Dinzo",
         desc: "Dinzo is a personal finance management app that consolidates accounts, cards, and expenses into a modern and intuitive platform. Focused on simplicity and automation, it enables users to track transactions, set goals, and visualize smart insights to maintain full control over their finances.",
-        tech: "React Native · Open Finance · Play Billing · In-App Purchases",
+        tech: "React Native · Open Finance · Play Billing · In-App Purchases · # Google Play 10mil+ downloads · # Google Play ★ 4,5 · # Apple Store ★ 4,3",
         links: [
           { label: "Website", href: "https://dinzo.com.br" },
           {
@@ -209,7 +209,7 @@ export const content = {
       {
         name: "Cargill Bioenergia",
         desc: "Corporate mobile app for employees of Cargill Bioenergia that provides streamlined access to payslips, scheduled vacations, time-clock history, hours bank, internal communications, and institutional content — all in a modern, user-friendly mobile interface.",
-        tech: "React Native · Internal Notifications · Offline Mode",
+        tech: "React Native · Offline Mode · # Google Play 10mil+ downloads",
         links: [
           {
             label: "Website",
@@ -228,7 +228,7 @@ export const content = {
       {
         name: "Shareitt",
         desc: "Global platform for sharing and exchanging goods and skills within communities, featuring a point-based system, notifications, and user engagement tools.",
-        tech: "React Native · White Label · International",
+        tech: "React Native · White Label · International · Shop · # Google Play 100mil+ downloads · # Apple Store ★ 4,6",
         links: [
           {
             label: "Website",
