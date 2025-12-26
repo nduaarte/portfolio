@@ -48,7 +48,7 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
                   <div className="pointer-events-none absolute inset-0 rounded-2xl border border-white/10 transition-opacity duration-300 group-hover:opacity-0" />
 
                   {/* Placeholder */}
-                  <div className="absolute inset-0 flex items-center justify-center text-lg transition-opacity duration-300 group-hover:opacity-0">
+                  <div className="absolute inset-0 flex items-center justify-center text-xl transition-opacity duration-300 group-hover:opacity-0">
                     📱
                   </div>
 
