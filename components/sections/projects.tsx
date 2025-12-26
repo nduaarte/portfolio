@@ -43,16 +43,26 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
                   i === 0 ? "justify-center" : ""
                 }`}
               >
-                <div className="w-14 h-14 flex-shrink-0 rounded-2xl overflow-hidden border border-zinc-700 bg-zinc-900/70">
+                <div className="relative w-14 h-14 flex-shrink-0 rounded-2xl overflow-hidden bg-neutral-900/80 group">
+                  {/* Borda */}
+                  <div className="pointer-events-none absolute inset-0 rounded-2xl border border-white/10 transition-opacity duration-300 group-hover:opacity-0" />
+
+                  {/* Placeholder */}
+                  <div className="absolute inset-0 flex items-center justify-center text-lg transition-opacity duration-300 group-hover:opacity-0">
+                    📱
+                  </div>
+
+                  {/* Ícone real */}
                   <img
                     src={`/icons/${p.name
                       .toLowerCase()
                       .replace(/\s+/g, "-")}.png`}
                     alt={`${p.name} icon`}
                     onError={(e) => (e.currentTarget.style.display = "none")}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover opacity-0 scale-95 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100"
                   />
                 </div>
+
                 <h4 className="text-2xl font-semibold text-white">{p.name}</h4>
               </div>
 
@@ -134,13 +144,14 @@ const Projects: React.FC<IProjectsProps> = ({ lang }) => {
           className="group relative overflow-hidden rounded-3xl p-[1.5px] transition-all duration-500"
         >
           {/* Borda RGB estática */}
-          <div className="absolute inset-0 rounded-3xl bg-[conic-gradient(from_0deg,#ff0055,#ff7b00,#ffee00,#00ff99,#00c2ff,#a100ff,#ff0055)] blur-[5px] opacity-80"></div>
-          <div className="absolute inset-0 rounded-3xl bg-[conic-gradient(from_0deg,#ff0055,#ff7b00,#ffee00,#00ff99,#00c2ff,#a100ff,#ff0055)] opacity-90"></div>
+          <div className="absolute inset-0 rounded-3xl bg-[conic-gradient(from_120deg,#38bdf8,#f0f9ff,#bae6fd,#d4d4d8,#38bdf8)] blur-[6px] opacity-60"></div>
+
+          <div className="absolute inset-0 rounded-3xl bg-[conic-gradient(from_120deg,#38bdf8,#f0f9ff,#bae6fd,#d4d4d8,#38bdf8)] opacity-90"></div>
 
           {/* Conteúdo interno */}
-          <div className="relative z-10 bg-neutral-950 rounded-[calc(1.5rem-2px)] border border-neutral-900 backdrop-blur-xl p-10 flex flex-col items-center text-center shadow-[0_0_40px_-10px_rgba(255,255,255,0.15)]">
+          <div className="relative z-10 rounded-[calc(1.5rem-2px)] bg-neutral-950/95 border border-white/8  ring-1 ring-black/40 backdrop-blur-xl p-10 flex flex-col items-center text-center shadow-[0_0_70px_-20px_rgba(186,230,253,0.18)]">
             <div className="w-16 h-16 rounded-2xl border border-white/10 flex items-center justify-center bg-white/5 text-3xl">
-              🚀
+              💎
             </div>
 
             <h4 className="text-2xl font-semibold text-white mt-4">
