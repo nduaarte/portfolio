@@ -8,6 +8,7 @@ interface IAboutProps {
 
 const About: React.FC<IAboutProps> = ({ lang }) => {
   const t = content[lang];
+
   return (
     <section
       id="about"
@@ -29,21 +30,20 @@ const About: React.FC<IAboutProps> = ({ lang }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        {/* Avatar aprimorado */}
+        {/* Avatar */}
         <div className="relative flex-shrink-0 w-44 h-44 rounded-2xl overflow-hidden">
-          {/* Fundo animado */}
           <div className="absolute inset-0 bg-gradient-to-tr from-zinc-800 via-zinc-900 to-zinc-950 border border-zinc-800 animate-spin-slow rounded-2xl blur-md opacity-70" />
           <img
-            src="https://avatars.githubusercontent.com/u/60564538?s=400&u=53146ca5352feda6560107eabc193e877f6487f8&v=4"
+            src="https://avatars.githubusercontent.com/u/60564538?s=400&v=4"
             alt="Foto de Nycollas Duarte"
             className="relative w-full h-full object-cover rounded-2xl border border-zinc-700 shadow-[0_0_40px_-15px_rgba(255,255,255,0.25)]"
           />
         </div>
 
-        {/* Texto principal */}
+        {/* Conteúdo */}
         <div className="max-w-2xl">
           <p className="text-zinc-400 leading-relaxed mb-6">
-            <span className="text-white font-medium">
+            <span className="text-white font-semibold tracking-wide">
               {lang === "pt"
                 ? "Sou um desenvolvedor frontend especializado em experiências mobile,"
                 : "I'm a frontend developer specialized in mobile experiences,"}
@@ -56,23 +56,28 @@ const About: React.FC<IAboutProps> = ({ lang }) => {
           {/* Tech badges */}
           <div className="flex flex-wrap gap-3 justify-center sm:justify-start mb-8">
             {[
-              "TypeScript",
-              "React Native",
-              "Next.js",
-              "Expo",
-              "Zustand",
-              "TanStack Query",
-              "UX/UI",
-              "CI/CD",
-              "Agile",
-              "Scrum",
-              "Kanban",
+              { name: "TypeScript", main: true },
+              { name: "React Native", main: true },
+              { name: "Next.js", main: true },
+              { name: "Expo", main: false },
+              { name: "Zustand", main: false },
+              { name: "TanStack Query", main: false },
+              { name: "UX/UI", main: false },
+              { name: "CI/CD", main: false },
+              { name: "Agile", main: false },
+              { name: "Scrum", main: false },
+              { name: "Kanban", main: false },
             ].map((tech, i) => (
               <span
                 key={i}
-                className="px-3 py-1.5 text-xs rounded-full bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all duration-300 backdrop-blur-sm"
+                className={`px-3 py-1.5 text-xs rounded-full transition-all duration-300 backdrop-blur-sm
+                  ${
+                    tech.main
+                      ? "bg-white/10 border border-white/30 text-white shadow-[0_0_20px_-6px_rgba(255,255,255,0.35)] hover:shadow-[0_0_25px_-4px_rgba(255,255,255,0.5)]"
+                      : "bg-white/5 border border-white/10 text-zinc-400 hover:bg-white/10 hover:text-zinc-200"
+                  }`}
               >
-                {tech}
+                {tech.name}
               </span>
             ))}
           </div>
@@ -84,12 +89,12 @@ const About: React.FC<IAboutProps> = ({ lang }) => {
             href="mailto:nycollas.duaarte@hotmail.com"
             className="inline-flex items-center gap-2 text-sm text-white font-medium border border-zinc-700 px-5 py-2 rounded-lg hover:bg-white hover:text-black transition-all duration-300"
           >
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             ✉️ {lang === "pt" ? "Entre em contato" : "Get in touch"}
           </motion.a>
         </div>
       </motion.div>
 
-      {/* Estilos adicionais */}
       <style jsx>{`
         @keyframes spin-slow {
           from {
