@@ -64,7 +64,7 @@ const Hero: React.FC<IHeroProps> = ({ lang }) => {
           </Button>
         </a>
         <Button className="cursor-pointer border border-zinc-600 text-white bg-transparent px-6 py-3 hover:-translate-y-1 hover:scale-105 hover:border-white hover:bg-white/10 shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-300">
-          <a href="cv_nycollas_2025.pdf" download>
+          <a href="cv_nycollas_2026.pdf" download>
             {t.hero.buttons[1]}
           </a>
         </Button>
